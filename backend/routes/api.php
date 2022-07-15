@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DispositivoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/getBodegas', [DispositivoController::class, 'getBodegas']);
+Route::get('/getDispositivo', [DispositivoController::class, 'getDispositivo']);
+Route::get('/getMarcas', [DispositivoController::class, 'getMarcas']);
+Route::get('/getModelofMarca', [DispositivoController::class, 'getModelofMarca']);
