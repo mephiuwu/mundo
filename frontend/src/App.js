@@ -21,6 +21,11 @@ function App() {
 	}, [bodega, marca, model]);
 
 	useEffect( () => {
+		if(!marca) {
+			setModel();
+			setModels([]);
+		}
+		
 		loadModels();
 	}, [marca]);
 
@@ -67,6 +72,8 @@ function App() {
 	}
 
 	const loadModels = () => {
+		if (!marca) return
+
 		axios.get(process.env.REACT_APP_BACKEND+'/getModelofMarca', {
 			params: {
 				marca
