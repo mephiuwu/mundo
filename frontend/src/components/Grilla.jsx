@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Grilla = ({data}) => {
-    console.log(data);
     return (
         <table className="table text-white mt-5">
             <thead>

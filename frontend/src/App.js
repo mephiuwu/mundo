@@ -91,9 +91,9 @@ function App() {
 		<div className="App">
 			<div className="container mt-5">
 				<div className='row'>
-					<Combobox data={bodegas} setState={setBodega}/>
-					<Combobox data={marcas} setState={setMarca}/>
-					<Combobox data={models} setState={setModel}/>
+					<Combobox data={bodegas} setState={setBodega} title={'Bodegas'}/>
+					<Combobox data={marcas} setState={setMarca} title={'Marcas'}/>
+					<Combobox data={models} setState={setModel} title={'Modelos'}/>
 					<Grilla data={devices}/>
 				</div>
 			</div>
