@@ -2,7 +2,7 @@
 
 Comandos para correr proyecto - *backend*:
 
-# Ingresar a carpeta backend
+Ingresar a carpeta backend
 
 - ejecutar *composer install* (para instalar las dependencias).
 - ejecutar *cp .env.example .env* (para copiar lo que hay en .env.example y crear un archivo con el mismo contenido llamado .env).
@@ -13,7 +13,7 @@ Comandos para correr proyecto - *backend*:
 
 ## FRONTEND
 
-# Ingresar a carpeta frontend
+Ingresar a carpeta frontend
 
 Comandos para correr proyecto - *frontend*:
 
