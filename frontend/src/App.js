@@ -21,8 +21,8 @@ function App() {
 	}, [bodega, marca, model]);
 
 	useEffect( () => {
+		setModel(null);
 		if(!marca) {
-			setModel();
 			setModels([]);
 		}
 		
